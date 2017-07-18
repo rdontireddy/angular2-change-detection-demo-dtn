@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { WhatIsCdComponent } from './whatIsChangeDetection/whatIsCd.component';
+
+import { NotificationService } from './notification.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WhatIsCdComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
