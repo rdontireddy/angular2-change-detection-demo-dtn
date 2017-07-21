@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label class="form-control" for=" "><input  type="checkbox" [(ngModel)]="_markToCheck">   Mark To Run ChangeDetection</label>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <input class="form-control" type="button" value="Reset News" (click)="onResetNews()">
+  </div>
+  <div class="col-sm-3">
+    <input class="form-control" type="button" value="Dummy Button" (click)="onDummyClick()">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Flash News </div>
+  <div class="panel-body">
+    <div *ngFor="let item of articles">
+      <app-fn-bulletin [article]="item"></app-fn-bulletin>
+    </div>
+  </div>
+</div>

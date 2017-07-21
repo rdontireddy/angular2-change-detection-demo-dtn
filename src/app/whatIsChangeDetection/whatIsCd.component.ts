@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef, DoCheck, AfterVi
 import { NotificationService } from 'app/notification.service';
 
 @Component({
-  selector: 'what-is-cd',
+  selector: 'app-what-is-cd',
   templateUrl: 'whatIsCd.component.html'
 })
 export class WhatIsCdComponent implements DoCheck, AfterViewInit {

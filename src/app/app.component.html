@@ -5,33 +5,23 @@
     </h1>
   </div>
   <div class="row">
-    <div class="col-sm-8">
-      <div class="row">
-        <div></div>
-        <div class="form-group">
-          <input type="button" class="form-control" value="Update Same Reference - Mutable" (click)="onUpdateSameReference()">
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group">
-          <input type="button" class="form-control" value="Create New Reference - Immutable" (click)="onCreateNewReference()">
-        </div>
-      </div>
-      <div class="row">
-        <pre>{{whatIsChangeDetection | json}}</pre>
-      </div>
-      <div class="row">
-        <div class="panel panel-default">
-          <div class="panel-heading">Component - C1</div>
-          <div class="panel-body">
-            <what-is-cd [model]="whatIsChangeDetection"></what-is-cd>
-          </div>
+    <div class="col-sm-3">
+      <div class="well">
+        <div>
+          <ul class="nav nav-list">
+            <li><label class="nav-header">Demos</label>
+              <ul class="nav nav-list tree">
+                <li> <a routerLink="/whatIsChangeDetection">What Is Change Detection Demo</a></li>
+                <li> <a routerLink="/whatCauseChange">What Cause Change Demo</a></li>
+                <li> <a routerLink="/flashNews">Tabs Flash News</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <pre>{{message}}</pre>
+    <div class="col-sm-9">
+      <router-outlet></router-outlet>
     </div>
   </div>
-
 </div>

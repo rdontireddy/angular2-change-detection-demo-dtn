@@ -8,7 +8,7 @@ import { NotificationService } from './notification.service';
 })
 export class AppComponent {
   id = 'root';
-  title = 'Angular Change Detection Demo App';
+  title = 'Angular 2 Change Detection Demo App';
   message = '';
   whatIsChangeDetection = { firstName: 'Rajanikar', lastName: 'Dontireddy' };
   constructor(private _notificationService: NotificationService) {
